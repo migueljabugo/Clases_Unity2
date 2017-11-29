@@ -18,14 +18,15 @@ public class Fliper : MonoBehaviour {
 
 
 	void Update () {
+		float reverse = (reversed) ? -1 : 1;
 		if (Input.GetAxis (axis) != 0) {
 			//Levantar el flipper
-			spring.targetPosition = -angle;
+			spring.targetPosition = -angle * reverse;
 			hinge.spring = spring;
 
 		} else {
 			//Bajar el flipper a la posicion inicial
-			spring.targetPosition = angle;
+			spring.targetPosition = angle * reverse;
 			hinge.spring = spring;
 		}
 		

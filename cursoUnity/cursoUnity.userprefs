@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Fliper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\DeadZone.cs">
     <Files>
-      <File FileName="Assets\scripts\BallLauncher.cs" Line="10" Column="21" />
-      <File FileName="Assets\scripts\Fliper.cs" Line="28" Column="25" />
+      <File FileName="Assets\scripts\ScoreObject.cs" Line="20" Column="31" />
+      <File FileName="Assets\scripts\ScoreManager.cs" Line="21" Column="37" />
+      <File FileName="Assets\scripts\ScoreText.cs" Line="12" Column="25" />
+      <File FileName="Assets\scripts\DeadZone.cs" Line="14" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

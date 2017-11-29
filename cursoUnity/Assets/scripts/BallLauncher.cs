@@ -7,7 +7,7 @@ public class BallLauncher : MonoBehaviour {
 	public Rigidbody myRigidbody;
 	public float pushForce;
 	private Vector3 direction;
-	private bool fired;
+	public bool fired;
 
 	void Start(){
 		fired = false;
