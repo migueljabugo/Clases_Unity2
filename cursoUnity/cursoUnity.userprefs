@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\CharacterController\cRotation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\RaycastTest\LaunchBall.cs">
     <Files>
-      <File FileName="Assets\scripts\CharacterController\CMovements.cs" Line="19" Column="33" />
-      <File FileName="Assets\scripts\CharacterController\cRotation.cs" Line="26" Column="1" />
+      <File FileName="Assets\scripts\RaycastTest\RaycastTest.cs" Line="35" Column="3" />
+      <File FileName="Assets\scripts\RaycastTest\LolTest.cs" Line="25" Column="4" />
+      <File FileName="Assets\scripts\RaycastTest\MoveTo.cs" Line="26" Column="48" />
+      <File FileName="Assets\scripts\RaycastTest\LaunchBall.cs" Line="24" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
