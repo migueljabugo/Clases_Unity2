@@ -6,6 +6,10 @@ using UnityEngine.AI;
 public class FindBall : MonoBehaviour {
 
 	NavMeshAgent agent;
+	public Marcador marcadorRed;
+	public Marcador marcadorBlue;
+	public Marcador marcadorYellow;
+	public Marcador marcadorGreen;
 
 	// Use this for initialization
 	void Start () {
@@ -38,14 +42,35 @@ public class FindBall : MonoBehaviour {
 				minDistance = dist;
 			}
 		}
-
 		return ball;	
 	}
 
 
 	private void OnTriggerEnter(Collider col){
+
+		AudioSource audioSource = GetComponent<AudioSource> ();
+		audioSource.Play();
+
+		switch (col.gameObject.name) {
+			case "BolitaRed":
+				marcadorRed.AddScore ();
+				break;
+			case "BolitaBlue":
+				marcadorBlue.AddScore ();
+				break;
+			case "BolitaYellow":
+				marcadorYellow.AddScore ();
+				break;
+			case "BolitaGreen":
+				marcadorGreen.AddScore ();
+				break;
+		}
 		Destroy (col.gameObject);	
 		Debug.Log ( "Destroy ball");
 	}
+
+
+
+
 
 }
