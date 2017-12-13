@@ -24,7 +24,10 @@ public class MoveTo : MonoBehaviour {
 
 			if (Physics.Raycast(ray, out hit, 1000, LayerMask.GetMask("floor"))) {
 				//Debug.Log (hit.collider.gameObject.name);
-				agent.SetDestination (hit.point);
+
+
+				//MOver ajente al punto
+				//agent.SetDestination (hit.point);
 			}
 		}
 
