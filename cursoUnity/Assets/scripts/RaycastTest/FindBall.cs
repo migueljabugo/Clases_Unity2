@@ -21,7 +21,7 @@ public class FindBall : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Collider[] balls = Physics.OverlapSphere (transform.position, 50, LayerMask.GetMask ("balls"));
-		Debug.Log ( balls.Length);
+		//Debug.Log ( balls.Length);
 		if (balls != null && balls.Length>0) {
 			GameObject ball= GetNearetBall (balls);
 			agent.SetDestination (ball.transform.position);
