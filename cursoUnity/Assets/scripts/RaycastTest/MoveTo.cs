@@ -7,6 +7,7 @@ public class MoveTo : MonoBehaviour {
 
 	public NavMeshAgent agent;
 	public Animator animator;
+	public Transform target;
 
 
 
@@ -37,8 +38,12 @@ public class MoveTo : MonoBehaviour {
 		} else {
 			animator.SetBool ("moving", false);
 		}
+	}
 
 
-
+	public void DestroyTarget(){
+		if (target != null) {
+			Destroy (target);
+		}
 	}
 }

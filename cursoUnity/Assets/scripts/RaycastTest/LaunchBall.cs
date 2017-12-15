@@ -8,15 +8,17 @@ public class LaunchBall : MonoBehaviour {
 	public float pushForce = 10;
 	public List<GameObject> bolitasPrefabs = new List<GameObject>();
 	public bool infinitasBolas = false;
+	public AudioSource audioSource;
+
+	void Start(){
+		audioSource = GetComponent<AudioSource> ();
+
+	}
 
 
 	void Update () {
 		if (/*Input.GetMouseButtonDown (0) ||*/ infinitasBolas) {
 			LanzarBolaRandomDireccionClic ();
-
-
-
-
 		}
 	}
 
@@ -59,6 +61,8 @@ public class LaunchBall : MonoBehaviour {
 	}
 
 	private void LanzarBolaForward(int ball){
+		audioSource.Play ();
+		
 		Debug.Log ("Lanza bola");
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		RaycastHit hit;
