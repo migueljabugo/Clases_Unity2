@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/characterController.unity
+- path: Assets/scenes/Particles.unity
   isLoaded: 1
   isActive: 1

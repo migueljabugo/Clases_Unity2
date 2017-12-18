@@ -51,12 +51,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FullTiltBoogie\RotateFlareHolder.cs" />
      <Compile Include="Assets\scripts\BallLauncher.cs" />
      <Compile Include="Assets\scripts\CharacterController\CMovements.cs" />
      <Compile Include="Assets\scripts\CharacterController\cRotation.cs" />
      <Compile Include="Assets\scripts\DeadZone.cs" />
      <Compile Include="Assets\scripts\Fliper.cs" />
      <Compile Include="Assets\scripts\LauncherDoor.cs" />
+     <Compile Include="Assets\scripts\ParticleController.cs" />
      <Compile Include="Assets\scripts\PlaySound.cs" />
      <Compile Include="Assets\scripts\RaycastTest\FindBall.cs" />
      <Compile Include="Assets\scripts\RaycastTest\LaunchBall.cs" />
@@ -71,6 +73,8 @@
      <Compile Include="Assets\scripts\ScoreManager.cs" />
      <Compile Include="Assets\scripts\ScoreObject.cs" />
      <Compile Include="Assets\scripts\ScoreText.cs" />
+     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
+     <None Include="Assets\FullTiltBoogie\Helpers\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
